@@ -1,0 +1,38 @@
+.idea
+data
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Docker
+*.log
+docker-compose.override.yml
+.env
+*.pid
+*.sock
+
+# Airflow
+airflow/logs/
+airflow/__pycache__/
+airflow/.env
+airflow/data/*.db
+airflow/.pytest_cache/
+
+# Streamlit
+streamlit_app/__pycache__/
+streamlit_app/.streamlit/
+streamlit_app/*.db
+
+# DBT
+airflow/dbt/target/
+airflow/dbt/dbt_modules/
+airflow/dbt/.dbt/

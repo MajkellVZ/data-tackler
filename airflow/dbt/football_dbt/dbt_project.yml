@@ -1,0 +1,22 @@
+config-version: 2
+
+name: 'football_dbt'
+version: '1.0.0'
+
+profile: 'football_dbt'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  football_dbt:
+    example:
+      +materialized: view
